@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body class="body-home">
+  <div id="header"></div>
+  <div class="main">
+    <div class="slideshow">
+      <div class="slideshowcontainer">
+        <div class="leftarrow" onclick="plusSlide(-1)"><span class="arrow arrowleft"></span></div>
+        <div class="rightarrow" onclick="plusSlide(1)"><span class="arrow arrowright"></span></div>
+        <div class="captionholder"><p class="captiontext"></p></div>
+        <div class="imgholder">
+          <img src="images/banner1.jpg">
+        </div>
+
+        <div class="imgholder">
+          <img src="images/banner2.jpg">
+        </div>
+
+        <div class="imgholder">
+          <img src="images/banner3.jpeg">
+        </div>  
+        <div class="imgholder">
+          <img src="images/banner4.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="deals">
+      <h2 class="heading">Top Deals</h2>
+      <hr>
+      <div class="holder">
+          <img src="images/td1.webp">
+        <div class = "description">
+          <p class="type">Men's Shirt</p>
+          <p class="offer">Upto 50% off</p>
+          <p class="brandname">Monte Carlo, Lee & more</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="images/td2.jpg">
+        <div class = "description">
+          <p class="type">Women dress Floral</p>
+          <p class="offer">Upto 40%+Extra 5%Off</p>
+          <p class="brandname">Forever21, Crazevilla</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="images/td3.jpg">
+        <div class = "description">
+          <p class="type">Super Matte Lipstick</p>
+          <p class="offer">20% Off on selected brands</p>
+          <p class="brandname">Elle 18, mac & more</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="images/td4.webp">
+        <div class = "description">
+          <p class="type">Mobile Phones</p>
+          <p class="offer">Min 10% off</p>
+          <p class="brandname">Redmi, Oneplus & more</p>
+        </div>
+      </div>
+      
+    </div>
+     <div class="deals">
+       <h2 class="heading">New Launches</h2>
+      <hr>
+      <div class="holder">
+          <img src="images/nl1.jpg">
+        <div class = "description">
+          <p class="type">For All Models</p>
+          <p class="offer">From Rs. 499</p>
+          <p class="brandname">Magnetic Back Cover</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="images/nl2.jpg">
+        <div class = "description">
+          <p class="type">Headphones</p>
+          <p class="offer">Treanding Deal</p>
+          <p class="brandname">New launches</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="images/nl3.jpg">
+        <div class = "description">
+          <p class="type">High Performance Laptops</p>
+          <p class="offer">From Rs.41,900</p>
+          <p class="brandname">HP, Dell, Asus & more</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="images/nl4.jpg">
+        <div class = "description">
+          <p class="type">New Launched Soundbars</p>
+          <p class="offer">From Rs. 5999</p>
+          <p class="brandname">Bring Theatre Home</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>  
+      $(function(){ 
+        $("#header").load("header.html");  
+        $("#footer").load("footer.html");  
+      }); 
+    </script> 
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Index</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>  
+      $(function(){ 
+        $("#header").load("header.html");  
+        $("#footer").load("footer.html");  
+      }); 
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" id="loginbutton">Login</a></li>
+        <li><a href="#" id="signupbutton">SignUp</a></li>
+      </ul>
+    </nav>
+    <div class="login-model">
+      <div class="model-content">
+        <div class="close">+</div>
+        <img src="https://miro.medium.com/fit/c/210/210/1*89cZq-48yLq9uO015I3J3A.png">
+        <form action="">
+          <input type="text" placeholder="Enter your email">
+          <input id="password" type="password" placeholder="Enter password">
+          <button>Login</button>
+        </form>
+      </div>
+    </div>
+    <div class="signup-model">
+      <div class="model-content">
+        <div id="close">+</div>
+        <form action="">
+          <h2 class="signupheading">Sign Up</h2>
+          <p class="signupdes">Please fill in this form to create an account</p>
+          <input type="text" placeholder="Enter first name">
+          <input type="text" placeholder="Enter last name">
+          <input type="text" placeholder="Enter your email">
+          <input type="password" id="password1" placeholder="Enter password">
+          <input id="password2" type="password" placeholder="Confirm password">
+          <button>Register</button>
+        </form>
+      </div>
+    </div>
+    <br><br>
+  <div class="brandname">
+        <ul class="name">
+          <li style="font-size:18px;color:green;">Hurray! 50% off on selected products</li>
+          <li style="font-size:25px;color:#ed6663;"><b><i>MiniFlipkart</i></b></li>
+          <li>
+            <input type="text" placeholder="Search here">
+          </li>
+        </ul>      
+  </div>
+<div class="menu">
+        <div class="dropdown">
+        <button class="dropbtn"><a href="home.html">Home</a></button>
+      </div>
+      <div class="dropdown">
+          <button class="dropbtn"><a href="#" id="contactus-button">Contact Us</a></button>
+      </div>
+      <div class="dropdown">
+          <button class="dropbtn"><a href="aboutus.html">About Us</a></button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="fashion.html">Fashion</a></button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="electronics.html">Mobile & Accessories</a></button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="beauty.html">Beauty</a></button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-shopping-cart"></i></button>
+      </div>
+  </div>
+
+  <div class="contactus-model">
+      <div class="model-content">
+        <div class="close" id="close-contactus">+</div>
+        <form action="">
+          <h2>Drop your Query here:</h2>
+          <label>Name:</label>
+          <input type="text" placeholder="Enter name"><br>
+          <label>Email:</label>
+          <input type="text" placeholder="Enter your Email"><br>
+          <label>Mobile:</label>
+          <input type="text" placeholder="Enter your mobile number"><br>
+          <textarea rows="4" cols="45" placeholder="Enter your query here"></textarea><br>
+          <button>Submit</button>
+          <hr>
+          <p id="add">Office Address: Flipkart Internet Private Limited, Outer Ring Road, Bengaluru, 560103, Karnataka, India Telephone: 1800 208 9898</p>
+        </form>
+      </div>
+    </div>
+
+  <div class="main">
+    <div class="slideshow">
+      <div class="slideshowcontainer">
+        <div class="leftarrow" onclick="plusSlide(-1)"><span class="arrow arrowleft"></span></div>
+        <div class="rightarrow" onclick="plusSlide(1)"><span class="arrow arrowright"></span></div>
+        <div class="captionholder"><p class="captiontext"></p></div>
+        <div class="imgholder">
+          <img src="images/banner1.jpg">Caption1</p>
+        </div>
+
+        <div class="imgholder">
+          <img src="images/banner2.jpg">
+          <p class="captiontext">Caption2</p>
+        </div>
+
+        <div class="imgholder">
+          <img src="images/banner3.jpeg">
+          <p class="captiontext">Caption3</p>
+        </div>  
+        <div class="imgholder">
+          <img src="images/banner4.jpg">
+          <p class="captiontext">Caption4</p>
+        </div>
+      </div>
+    </div>
+    <div class="deals">
+      <h2 class="heading">Top Deals</h2>
+      <hr>
+      <div class="holder">
+          <img src="https://cdn.shopify.com/s/files/1/0065/2319/1414/products/59117-550___short-sleeve-retro-geo-shirt-red___front_394x.jpg?v=1581494766">
+        <div class = "description">
+          <p class="type">Men's Shirt</p>
+          <p class="offer">Upto 50% off</p>
+          <p class="bn">Monte Carlo, Lee & more</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQsJZxBDyhivE6khlw0OiwCkGj3y2ANvHI9A&usqp=CAU">
+        <div class = "description">
+          <p class="type">Women dress Floral</p>
+          <p class="offer">Upto 40%+Extra 5%Off</p>
+          <p class="bn">Forever21, Crazevilla</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="https://i.pinimg.com/474x/be/95/d0/be95d08ca54b39ad500b6f9627b95792.jpg">
+        <div class = "description">
+          <p class="type">Super Matte Lipstick</p>
+          <p class="offer">20% Off on selected brands</p>
+          <p class="bn">Elle 18, mac & more</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="https://i.shgcdn.com/31824115-76ae-4ddb-b8e6-309c86103ebd/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+        <div class = "description">
+          <p class="type">Mobile Phones</p>
+          <p class="offer">Min 10% off</p>
+          <p class="bn">Redmi, Oneplus & more</p>
+        </div>
+      </div>
+      
+    </div>
+     <div class="deals">
+       <h2 class="heading">New Launches</h2>
+      <hr>
+      <div class="holder">
+          <img src="https://www.gorillacasestore.com/wp-content/uploads/2017/05/Gorilla-Case-Galaxy-S8-Case-White-as-min.jpg">
+        <div class = "description">
+          <p class="type">For All Models</p>
+          <p class="offer">From Rs. 499</p>
+          <p class="bn">Magnetic Back Cover</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="https://www.dhresource.com/0x0/f2/albu/g9/M00/F1/37/rBVaWF3yQ_WAf_ORAAIrfLn1eVQ143.jpg">
+        <div class = "description">
+          <p class="type">Headphones</p>
+          <p class="offer">Treanding Deal</p>
+          <p class="bn">New launches</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1583351589-asus-vivobook-flip-14-mini-laptop-1583351582.jpg">
+        <div class = "description">
+          <p class="type">High Performance Laptops</p>
+          <p class="offer">From Rs.41,900</p>
+          <p class="bn">HP, Dell, Asus & more</p>
+        </div>
+      </div>
+      <div class="holder">
+          <img src="https://media.4rgos.it/i/Argos/7861149_R_Z001A?w=750&h=440&qlt=70">
+        <div class = "description">
+          <p class="type">New Launched Soundbars</p>
+          <p class="offer">From Rs. 5999</p>
+          <p class="bn">Bring Theatre Home</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <hr>
+    <p>www.miniflipkart.com</p>
+    <p>Copyright @ 2020 All rights reaserved</p>
+    <p>Contact: +912345678987</p><hr>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
